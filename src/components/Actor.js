@@ -7,10 +7,10 @@ const Actor = ({sprite, data, step = 0, dir = 0}) => {
         <Sprite 
             image={sprite} 
             data={{
-                x: 0,
-                y: 0, 
-                h: 32,
-                w: 32
+                x: step * w,
+                y: dir * h, 
+                h,
+                w,
             }
         }/>
     )
