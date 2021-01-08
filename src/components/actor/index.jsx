@@ -1,10 +1,18 @@
 import React from 'react'
+import Sprite from "./components";
 
-const Actor = () => {
+const Actor = ({sprite, data, step = 0, dir = 0}) => {
+    const { h, w } = data
     return (
-        <div>
-            
-        </div>
+        <Sprite 
+            image={sprite} 
+            data={{
+                x: 0,
+                y: 0, 
+                h: 32,
+                w: 32
+            }
+        }/>
     )
 }
 
